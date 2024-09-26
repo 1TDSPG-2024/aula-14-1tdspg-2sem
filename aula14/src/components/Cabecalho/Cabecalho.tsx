@@ -1,10 +1,8 @@
-import Menu from "../Menu/Menu";
-
-export default function Cabecalho() {
+export default function Rodape() {
     return (
-        <header>
-            <h1>Cabecalho</h1>
-            <Menu />
-        </header>
+        <footer>
+            <h2 className="bg-background text-foreground">Rodape</h2>
+            <p>Desenvolvido por <span>rm554661</span></p>
+        </footer>
     )
 }
