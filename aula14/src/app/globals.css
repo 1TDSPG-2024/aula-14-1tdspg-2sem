@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .cabecalho{
+        @apply h-20;
+    }
+
+    .cabecalho li{
+        @apply inline m-5;
+    }
+
+    .cabecalho li a:hover {
+        @apply bg-slate-500 rounded-sm text-white;
+    }
+}
+
+body{
+    background-color: #f0f0f0;
+}
