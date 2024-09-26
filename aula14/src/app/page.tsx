@@ -1,7 +1,18 @@
+import { usaTema } from "@/components/ThemeContext/ThemeContext"
+
 export default function Home() {
+
+  const {tema, mudarTema} = usaTema();
+
   return (
     <div>
       <h1 className="h-20 bg-gray-100 flex items-center justify-center">Home</h1>
+
+      <button
+      onClick={()=>mudarTema}
+      className="mt-2 p-2 bg-blue-500 text-white rounded-md">
+      Alternar Tema
+      </button>
 
       <div>
         <h2 className="prose prose-lg mx-auto p-6 bg-gray-50 rounded-lg shadow-md">Exemplo FORM com plugin de TAILWIND</h2>
