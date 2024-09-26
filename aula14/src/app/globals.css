@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@taileind utilities;
+
+@layer components{
+    .cabecalho{
+        @apply h-32;
+    }
+
+    .cabecalho li{
+        @apply inline m-5;
+
+    }
+
+    .cabecalho li a:hover{
+        @apply bg-slate-500 rounded-sm text-white;
+    }
+}
+
+body{
+    background-color: aliceblue;
+}
